@@ -1,0 +1,14 @@
+%h1 Pets
+%hr
+
+%table.table.table-striped
+	%thead
+		%th Name
+		%th
+	%tbody
+		- @pets.each do |pet|
+			%tr
+				%td= pet.name
+				%td
+
+= paginate @pets
