@@ -23,6 +23,38 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+#Auth
+gem 'devise'
+
+#Authorization
+gem 'cancancan', '~> 1.10'
+gem 'rolify'
+
+# Pagination
+gem "kaminari", "~> 0.15.1"
+
+# HAML
+gem "haml-rails"
+
+# Files attachments
+gem "carrierwave"
+
+gem 'select2-rails'
+gem 'bootstrap-sass', '~> 3.0'
+gem "font-awesome-rails", '~> 4.2'
+gem 'nprogress-rails'
+gem 'masonry-rails'
+gem 'ckeditor'
+gem 'underscore-rails'
+
+#Google Maps
+gem 'gmaps4rails'
+
+group :development do 
+	gem 'better_errors'
+end
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
