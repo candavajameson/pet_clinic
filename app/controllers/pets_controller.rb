@@ -3,7 +3,7 @@ class PetsController < ApplicationController
 	before_filter :set_pet, only: [:edit, :update, :show, :destroy]
 
 	def index
-		@pets = Pet.paginate(params[:page]).per(10)
+		@pets = Pet.page(params[:page]).per(10)
 	end
 
 	def new

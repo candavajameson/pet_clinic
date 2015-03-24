@@ -1,6 +1,8 @@
 %h1 Pets
 %hr
 
+= link_to "New Pet", new_pet_path, class: "btn btn-success"
+
 %table.table.table-striped
 	%thead
 		%th Name
@@ -9,6 +11,6 @@
 		- @pets.each do |pet|
 			%tr
 				%td= pet.name
-				%td
+				%td= link_to "Edit", edit_pet_path(pet), class: "btn btn-success"
 
 = paginate @pets

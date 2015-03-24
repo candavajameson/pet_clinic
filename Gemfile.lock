@@ -60,7 +60,7 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1)
+    coffee-script-source (1.8.0)
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -184,6 +184,7 @@ DEPENDENCIES
   carrierwave
   ckeditor
   coffee-rails (~> 4.0.0)
+  coffee-script-source (= 1.8.0)
   devise
   font-awesome-rails (~> 4.2)
   gmaps4rails
